@@ -7,26 +7,45 @@ const Container=styled.div`
     flex-direction:row;
 `
 
+const LeftSide=styled.h1`
+    height: 100%;
+    width: 50%;`
+
 const WelcomeTitle = styled.h1`
     font-size: 100px;
-    color:blue;
-    text-align:center;
-    margin-top: 20px;
-    width:50%;
-    background-color:beige
+    color: white;
+    font-weight: 800;
+    margin-left: 120px;
 `
+
+const Label=styled.label`
+    font-size: 40px;
+    color: purple;
+`
+
+const Input=styled.input`
+    width: 200px;
+    height: 20px;
+`
+
 const RightSide=styled.h1`
-font-size: 30px;
-color:teal;
-width:50%;
-background-color:brown;
+height: 580px;
+width: 50% ;
+background-image: url("https://i0.wp.com/gcoconline.com/word/wp-content/uploads/2018/10/Growing-Plant.jpg?fit=940%2C580&ssl=1")
 `
 
 function LoginPage() {
     return (
         <Container>
-        <WelcomeTitle>Left half page</WelcomeTitle>
-        <RightSide>Right half page</RightSide>
+        <LeftSide>
+            <WelcomeTitle>Welcome!</WelcomeTitle>
+            <Label>ID: </Label>
+            <Input></Input>
+            <br></br>
+            <Label>Password: </Label>
+            <Input></Input>
+        </LeftSide>
+        <RightSide></RightSide>
         </Container>
     )
 }
