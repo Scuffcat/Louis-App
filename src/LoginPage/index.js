@@ -41,16 +41,28 @@ margin-left: 270px;
 color: green;
 `
 
+const LabelWrapper=styled.div`
+display: flex
+flex-direction: row
+margin-top: 100px
+justify-content: center
+`
+
+
 function LoginPage() {
     return (
         <Container>
         <LeftSide>
             <WelcomeTitle>Welcome!</WelcomeTitle>
+            <LabelWrapper>
             <Label>ID: </Label>
             <Input></Input>
+            </LabelWrapper>
             <br></br>
+            <LabelWrapper>
             <Label>Password: </Label>
-            <Input></Input>
+            <Input type="password"></Input>
+            </LabelWrapper>
             <br></br>
             <br></br>
             <Login>Login</Login>
