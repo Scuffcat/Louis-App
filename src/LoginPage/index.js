@@ -34,6 +34,13 @@ width: 50% ;
 background-image: url("https://i0.wp.com/gcoconline.com/word/wp-content/uploads/2018/10/Growing-Plant.jpg?fit=940%2C580&ssl=1")
 `
 
+const Login=styled.button`
+width: 150px;
+height: 70px;
+margin-left: 270px;
+color: green;
+`
+
 function LoginPage() {
     return (
         <Container>
@@ -44,6 +51,9 @@ function LoginPage() {
             <br></br>
             <Label>Password: </Label>
             <Input></Input>
+            <br></br>
+            <br></br>
+            <Login>Login</Login>
         </LeftSide>
         <RightSide></RightSide>
         </Container>
