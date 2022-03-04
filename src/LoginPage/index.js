@@ -1,3 +1,4 @@
+import React, { useState } from "react"
 import styled from "styled-components"
 
 const Container=styled.div`
@@ -50,6 +51,16 @@ justify-content: center
 
 
 function LoginPage() {
+    const [user, setUser] = useState({
+        id :"",
+        password : ""
+    });
+    const {id, password}=user;
+
+    const ToMainPage = () => {
+        alert("Warning")
+    }
+
     return (
         <Container>
         <LeftSide>
@@ -65,7 +76,7 @@ function LoginPage() {
             </LabelWrapper>
             <br></br>
             <br></br>
-            <Login>Login</Login>
+            <Login onClick={ToMainPage}>Login</Login>
         </LeftSide>
         <RightSide></RightSide>
         </Container>
