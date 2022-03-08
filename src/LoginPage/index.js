@@ -1,5 +1,6 @@
 import React, { useState } from "react"
 import styled from "styled-components"
+import { useHistory } from "react-router-dom"
 
 const Container=styled.div`
     height:100vh;
@@ -51,6 +52,7 @@ justify-content: center
 
 
 function LoginPage() {
+    const history=useHistory()
     const [user, setUser] = useState({
         id :"",
         password : ""
@@ -58,8 +60,17 @@ function LoginPage() {
     const {id, password}=user;
 
     const ToMainPage = () => {
-        alert("Warning")
+        history.push('/main')
     }
+
+const putUserInfo=(e)=>{
+    const {name,value}=e.target
+    setUser ({
+        ...user,
+        [name]:value,
+    })
+    console.log(user)
+}
 
     return (
         <Container>
@@ -67,12 +78,12 @@ function LoginPage() {
             <WelcomeTitle>Welcome!</WelcomeTitle>
             <LabelWrapper>
             <Label>ID: </Label>
-            <Input></Input>
+            <Input type="text" value={id} name="id" onChange={putUserInfo}></Input>
             </LabelWrapper>
             <br></br>
             <LabelWrapper>
             <Label>Password: </Label>
-            <Input type="password"></Input>
+            <Input type="password" value={password} name="password" onChange={putUserInfo}></Input>
             </LabelWrapper>
             <br></br>
             <br></br>
