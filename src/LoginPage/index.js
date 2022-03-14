@@ -60,7 +60,14 @@ function LoginPage() {
     const {id, password}=user;
 
     const ToMainPage = () => {
-        history.push('/main')
+        if (id == "" || password == "") {
+            alert("Empty ID or Password")
+        }
+
+        if (id, password == 1234) {
+            alert("You may log in")
+            history.push("/main")
+        }
     }
 
 const putUserInfo=(e)=>{
