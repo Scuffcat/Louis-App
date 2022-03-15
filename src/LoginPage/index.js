@@ -31,23 +31,23 @@ const Input=styled.input`
 `
 
 const RightSide=styled.h1`
-height: 580px;
-width: 50% ;
-background-image: url("https://i0.wp.com/gcoconline.com/word/wp-content/uploads/2018/10/Growing-Plant.jpg?fit=940%2C580&ssl=1")
+    height: 580px;
+    width: 50% ;
+    background-image: url("https://i0.wp.com/gcoconline.com/word/wp-content/uploads/2018/10/Growing-Plant.jpg?fit=940%2C580&ssl=1")
 `
 
 const Login=styled.button`
-width: 150px;
-height: 70px;
-margin-left: 270px;
-color: green;
+    width: 150px;
+    height: 70px;
+    margin-left: 270px;
+    color: green;
 `
 
 const LabelWrapper=styled.div`
-display: flex
-flex-direction: row
-margin-top: 100px
-justify-content: center
+    display: flex
+    flex-direction: row
+    margin-top: 100px
+    justify-content: center
 `
 
 
@@ -60,11 +60,11 @@ function LoginPage() {
     const {id, password}=user;
 
     const ToMainPage = () => {
-        if (id == "" || password == "") {
+        if (id === "" || password === "") {
             alert("Empty ID or Password")
         }
 
-        if (id, password == 1234) {
+        if (id, password === 1234) {
             alert("You may log in")
             history.push("/main")
         }
