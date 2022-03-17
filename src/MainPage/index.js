@@ -18,15 +18,21 @@ const Desc = styled.h1`
     text-align: center
 `
 
-const Imgwrapper=styled.h1`
+const Imgwrapper=styled.div`
     display: flex;
-    justify-content: center
+    justify-content: center;
 `
 
-const Youtube = styled.h1`
-    width: 100px;
-    height: 100px;
-    background-image: url("https://i.pinimg.com/originals/7d/c9/93/7dc993c70d4adba215b87cafdc59d82d.png")
+const Youtube=styled.div`
+    width: 300px;
+    height: 300px;
+    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/300px-YouTube_social_white_square_%282017%29.svg.png")
+`
+
+const Twitter=styled.div`
+    width: 300px;
+    height: 300px;
+    background-image: url("https://authy.com/wp-content/uploads/Twitter-Logo.png")
 `
 
 function MainPage() {
@@ -36,6 +42,7 @@ function MainPage() {
         <Desc>Competitive Fortnite Player | VFX</Desc>
         <Imgwrapper>
         <Youtube></Youtube>
+        <Twitter></Twitter>
         </Imgwrapper>
     </Container>
     )
