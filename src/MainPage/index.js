@@ -23,16 +23,14 @@ const Imgwrapper=styled.div`
     justify-content: center;
 `
 
-const Youtube=styled.div`
-    width: 300px;
-    height: 300px;
-    background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/300px-YouTube_social_white_square_%282017%29.svg.png")
+const Youtube=styled.img`
+    width: 100px;
+    height: 100px;
 `
 
-const Twitter=styled.div`
-    width: 300px;
-    height: 300px;
-    background-image: url("https://authy.com/wp-content/uploads/Twitter-Logo.png")
+const Twitter=styled.img`
+    width: 100px;
+    height: 100px;
 `
 
 function MainPage() {
@@ -41,8 +39,8 @@ function MainPage() {
         <Hello>Hello, I am Louis</Hello>
         <Desc>Competitive Fortnite Player | VFX</Desc>
         <Imgwrapper>
-        <Youtube></Youtube>
-        <Twitter></Twitter>
+        <Youtube src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/300px-YouTube_social_white_square_%282017%29.svg.png"></Youtube>
+        <Twitter src="https://authy.com/wp-content/uploads/Twitter-Logo.png"></Twitter>
         </Imgwrapper>
     </Container>
     )
