@@ -33,15 +33,35 @@ const Twitter=styled.img`
     height: 100px;
 `
 
+const Profile=styled.img`
+    width: 300px;
+    height: 300px;
+`
+
+const Learnmore=styled.button`
+    width: 80px;
+    height: 50px;
+    margin-left: 50px;
+    color: blue;
+`
+
 function MainPage() {
     return (
     <Container>
         <Hello>Hello, I am Louis</Hello>
         <Desc>Competitive Fortnite Player | VFX</Desc>
         <Imgwrapper>
+        <a href="https://www.youtube.com/channel/UClcYLrZf86i8mFYTp9pgeWw">
         <Youtube src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/300px-YouTube_social_white_square_%282017%29.svg.png"></Youtube>
+        </a>
+        <a href="https://twitter.com/ScuffcatFN">
         <Twitter src="https://authy.com/wp-content/uploads/Twitter-Logo.png"></Twitter>
+        </a>
         </Imgwrapper>
+        <Imgwrapper>
+        <Profile src="https://yt3.ggpht.com/TI7wuXQFIUOXPgdT9-rGi5hkj29wpx9kgGnA9RprFONcmojnCL5rqmwyqFJWsgRFGbt5DqvA=s176-c-k-c0x00ffffff-no-rj"></Profile>
+        </Imgwrapper>
+        <Learnmore>Learn more</Learnmore>
     </Container>
     )
 }
