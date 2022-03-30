@@ -1,4 +1,6 @@
+import React, { useState } from "react"
 import styled from "styled-components"
+import { useHistory } from "react-router-dom"
 
 const Container=styled.div`
     height: 100vh;
@@ -45,7 +47,13 @@ const Learnmore=styled.button`
     color: blue;
 `
 
+
 function MainPage() {
+    const history=useHistory()
+    const ToLearnMore = () => {
+        history.push("/more")
+    }
+    
     return (
     <Container>
         <Hello>Hello, I am Louis</Hello>
@@ -61,7 +69,7 @@ function MainPage() {
         <Imgwrapper>
         <Profile src="https://yt3.ggpht.com/TI7wuXQFIUOXPgdT9-rGi5hkj29wpx9kgGnA9RprFONcmojnCL5rqmwyqFJWsgRFGbt5DqvA=s176-c-k-c0x00ffffff-no-rj"></Profile>
         </Imgwrapper>
-        <Learnmore>Learn more</Learnmore>
+        <Learnmore onClick={ToLearnMore}>Learn more</Learnmore>
     </Container>
     )
 }

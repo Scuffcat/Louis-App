@@ -37,8 +37,8 @@ const RightSide=styled.h1`
 `
 
 const Login=styled.button`
-    width: 50px;
-    height: 30px;
+    width: 150px;
+    height: 70px;
     margin-left: 270px;
     color: green;
 `
