@@ -59,10 +59,10 @@ function MainPage() {
         <Hello>Hello, I am Louis</Hello>
         <Desc>Competitive Fortnite Player | VFX</Desc>
         <Imgwrapper>
-        <a href="https://www.youtube.com/channel/UClcYLrZf86i8mFYTp9pgeWw">
+        <a href="https://www.youtube.com">
         <Youtube src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/72/YouTube_social_white_square_%282017%29.svg/300px-YouTube_social_white_square_%282017%29.svg.png"></Youtube>
         </a>
-        <a href="https://twitter.com/ScuffcatFN">
+        <a href="https://twitter.com">
         <Twitter src="https://authy.com/wp-content/uploads/Twitter-Logo.png"></Twitter>
         </a>
         </Imgwrapper>

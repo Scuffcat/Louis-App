@@ -1,7 +1,11 @@
-import React, { useState } from "react"
-import styled from "styled-components"
-import { useHistory } from "react-router-dom"
-import {ProgressBar, Button} from "react-bootstrap"
+import React, { useState } from "react";
+import styled from "styled-components";
+import { useHistory } from "react-router-dom";
+import {ProgressBar, Button} from "react-bootstrap";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+import "./style.css";
+import { editableInputTypes } from "@testing-library/user-event/dist/utils";
 
 const Container=styled.div`
     height: 100%;
@@ -32,6 +36,27 @@ const Educationrowcontainer=styled.div`
     font-size: 25px;
 `
 
+const Achievementscontainer=styled.div`
+    background-color: purple;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+`
+
+const Achievements=styled.h1`
+    font-size: 25px;
+    color: white;
+`
+
+const Achievementstitle=styled.h1`
+    font-size: 50px;
+    color: white;
+`
+
 const About = styled.h1`
     font-size: 70px;
     color: white;
@@ -60,6 +85,10 @@ const Education = styled.h1`
 `
 
 function LearnMore() {
+    const barstyle={
+        width: "300px",
+        height: "30px",
+    };
     return (
         <Container>
             <Aboutmecontainer>
@@ -75,7 +104,18 @@ function LearnMore() {
             <Educationcontainer>
                 <Education>Education</Education>
                 <Educationrowcontainer>GPA</Educationrowcontainer>
+                <ProgressBar style={barstyle} label={`4.8/5.0`} max={5.0} min={0.0} now={4.8}/>
+                
+                <Educationrowcontainer>SAT</Educationrowcontainer>
+                <ProgressBar style={barstyle} label={`1500/1600`} max={1600.0} min={0.0} now={1500.0}/>
             </Educationcontainer>
+
+            <Achievementscontainer>
+                <Achievementstitle>Achievements</Achievementstitle>
+                <Achievements>$100 earned from video games</Achievements>
+                <Achievements>High GPA</Achievements>
+            </Achievementscontainer>
+
         </Container>
     )
 }
