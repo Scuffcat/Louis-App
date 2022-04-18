@@ -84,6 +84,27 @@ const Education = styled.h1`
     text-align: center;
 `
 
+const Interestscontainer=styled.div`
+    background-color: red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 80px;
+`
+
+const Interests=styled.h1`
+    font-size: 25px;
+    color: white;
+`
+
+const Intereststitle=styled.h1`
+    font-size: 50px;
+    color: white;
+`
+
 function LearnMore() {
     const barstyle={
         width: "300px",
@@ -115,6 +136,15 @@ function LearnMore() {
                 <Achievements>$100 earned from video games</Achievements>
                 <Achievements>High GPA</Achievements>
             </Achievementscontainer>
+
+            <Interestscontainer>
+                <Intereststitle>Interests</Intereststitle>
+                <Interests>Gaming</Interests>
+                <Interests>Video editing</Interests>
+                <Interests>Sports</Interests>
+                <Interests>Science</Interests>
+                <Interests></Interests>
+            </Interestscontainer>
 
         </Container>
     )
